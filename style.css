@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fan-img{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    margin-top: 10px;
+}
+
+img{
+    animation: fananim linear infinite;
+}
+
+#fanclip{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -4px;
+    left: 43.5%;
+}
+
+#fanstand{
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: 45%;
+    z-index: -1;
+}
+
+@keyframes fananim{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.div-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.div-btn button{
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+}
+
+#on{
+    background-color: yellow;
+}
+
+#off{
+    background-color: red;
+}
+
+#speed1{
+    background-color: green;
+}
+
+#speed2{
+    background-color: green;
+}
+
+#speed3{
+    background-color: green;
+}
